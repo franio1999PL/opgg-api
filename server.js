@@ -67,8 +67,8 @@ app.get('/', (req, res) => {
             return Array.from(columns, column => column.innerText)
           })
         })
-        .catch(() => {
-          return 'None'
+        .catch(err => {
+          res.send('error do u need add nickname and server in query')
         })
 
       const stats = {
