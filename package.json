@@ -2,7 +2,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "opgg-duo-scraper": "^3.1.0"
+    "puppeteer-extra": "^3.3.4",
+    "puppeteer-extra-plugin-adblocker": "^2.13.5"
   },
   "name": "opgg-api",
   "version": "1.0.0",
