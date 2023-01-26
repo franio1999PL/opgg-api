@@ -11,6 +11,17 @@ const app = express()
 app.use(cors())
 
 app.get('/', (req, res) => {
+  const message = {
+    status: 'success',
+    code: 200,
+    message:
+      'Just use /stats?nickname={your_nickname}&server={server_region(euw)}'
+  }
+
+  res.send({ message })
+})
+
+app.get('/stats', (req, res) => {
   const nickname = req.query.nickname
   const server = req.query.server
 
