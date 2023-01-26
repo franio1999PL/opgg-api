@@ -29,7 +29,7 @@ app.get('/stats', (req, res) => {
     try {
       const browser = await puppeteer.launch({
         headless: true,
-        channel: 'chrome'
+        channel: 'chromium'
       })
 
       const context = browser.defaultBrowserContext()
